@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <H1>Cadastro</H1>
+    <form action="/url-de-envio-dos-dados" method="post">
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="Nome Completo" />
+        </div>
+        <br>
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" placeholder="E-mail inteiro" />
+        </div>
+        <br>
+        <div>
+            <label for="cpf">CPF:</label>
+            <input type="number" id="cpf" placeholder="Somente números" />
+        </div>
+        <br>
+        <div>
+            <label for="dataNasc">Data de nascimento:</label>
+            <input type="date" id="dataNasc" />
+        </div>
+        <br>
+        <div class="button">
+            <button type="submit" id="enviarDados">Enviar Dados</button>
+        </div>
+    </form>
+</body>
+<script type="text/javascript" src="index.js"></script>
+<script type="text/javascript" src="./model/cadastro.js"></script>
+
+</html>
